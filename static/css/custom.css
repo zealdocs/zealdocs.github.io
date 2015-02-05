@@ -1,51 +1,74 @@
-body { padding-top: 60px; }
-.hero-unit { background-color: #e8e8e8; padding-bottom: 15px; }
+body {
+  padding-top: 60px;
+}
+
+.hero-unit {
+  background-color: #e8e8e8;
+  padding-bottom: 15px;
+}
+
 #screenshot {
   margin: 0 auto;
   display: block;
 }
+
 .ss-wrapper {
-    padding-right: 20px;
-    margin-top: 20px; 
+  padding-right: 20px;
+  margin-top: 20px;
 }
 
 .row .btn {
   float: right;
   margin: 15px 0 0 0;
 }
+
 .well {
-    margin: 40px;
+  margin: 40px;
 }
+
 .copyright {
-    float: right;
-    margin: 80px 0;
+  float: right;
+  margin: 80px 0;
 }
+
 #ssModal {
-    width: 1100px;
-    margin-left: -550px;
+  width: 1100px;
+  margin-left: -550px;
 }
+
 #ssModal.fade.in {
-    top: 5%;
+  top: 5%;
 }
+
 #ssModal .modal-body {
-    max-height: 650px;
+  max-height: 650px;
 }
+
 #github-btn {
-    float: right;
+  float: right;
 }
+
 .hero-unit #github-btn {
-    margin-right: -80px;
-    margin-top: -40px;
+  margin-right: -80px;
+  margin-top: -40px;
 }
+
 #gittip-btn {
-    float: right;
-    margin-right: -40px;
-    margin-top: 5px;
+  float: right;
+  margin-right: -40px;
+  margin-top: 5px;
 }
+
 #gittip-btn a {
-    display: block;
+  display: block;
 }
-h2.top { margin-top: -6.5px; }
+
+h2.top {
+  margin-top: -6.5px;
+}
+
 @media (max-width: 767px) {
-    h2.top { margin-top: 10px; }
+  h2.top {
+    margin-top: 10px;
+  }
 }
