@@ -6,9 +6,8 @@ layout: default
     <iframe src="http://ghbtns.com/github-btn.html?user=zealdocs&repo=zeal&type=watch&count=true&size=large"
             allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
   </div>
-  <h1>
-    Zeal
-  </h1>
+
+  <h1>Zeal</h1>
 
   <p>
     Zeal is a simple offline API&nbsp;documentation browser inspired
@@ -32,59 +31,57 @@ layout: default
     </li>
   </ul>
   <p><a class="btn btn-primary btn-lg" href="download.html" role="button">Download</a></p>
-
-  <div class="clearfix"></div>
 </div>
+
 <div class="row">
-  <div class="span6">
-    <div class="row">
-      <div class="span6">
-        <h2>
-          Open source!
-        </h2>
+  <div class="col-md-6">
+    <h2>Open source!</h2>
 
-        <p>
-          Zeal is released under the GPL license, which allows anyone to contribute
-          changes. And it is available free of charge.
-        </p>
-        <a class="btn" href="https://github.com/zealdocs/zeal">See GitHub project page »</a>
-      </div>
-    </div>
+    <p>
+      Zeal is released under the GPL license, which allows anyone to contribute
+      changes. And it is available free of charge.
+    </p>
+    <a class="btn btn-default pull-right" href="https://github.com/zealdocs/zeal" role="button">Go to GitHub »</a>
 
-    <div class="ss-wrapper"><a href="#ssModal" data-toggle="modal"><img id="screenshot"
-                                                                        src="http://i.imgur.com/m2MS8pyh.png"></a>
-      <a class="btn" href="http://imgur.com/a/HX2yU">More screenshots »</a>
+    <div class="clearfix"></div>
+    <br>
 
-      <div class="clearfix"></div>
-    </div>
+    <a href="#ssModal" class="thumbnail" data-toggle="modal" data-target="#ssModal">
+      <img src="http://i.imgur.com/m2MS8pyh.png" class="img-responsive">
+    </a>
+    <a class="btn btn-default pull-right" href="http://imgur.com/a/HX2yU" role="button">More screenshots »</a>
   </div>
-  <div class="span6">
-    <div class="row">
-      <div class="span6">
-        <h2 class="top">
-          Documentation included
-        </h2>
 
-        <p>All documentation available for <a href="http://kapeli.com/dash">Dash</a> is also available for Zeal. See <a
-            href="http://kapeli.com/dash#docsets">list on Dash's website</a>.</p>
-        <img src="/static/img/docsets.png"/>
+  <div class="col-md-6">
+    <h2>Documentation included</h2>
 
-        <p>You can also generate your own docsets using the same format Dash uses - see <a
-            href="http://kapeli.com/docsets">instructions on Dash's website</a>.</p>
-      </div>
-    </div>
+    <p>
+      All documentation available for <a href="http://kapeli.com/dash">Dash</a> is also available for Zeal.
+      See <a href="http://kapeli.com/dash#docsets">list on Dash's website</a>.
+    </p>
+
+    <img src="/static/img/docsets.png" class="img-responsive">
+
+    <p>
+      You can also generate your own docsets using the same format Dash uses - see
+      <a href="http://kapeli.com/docsets">instructions on Dash's website</a>.
+    </p>
   </div>
-  <div id="ssModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-       aria-hidden="true">
-    <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-      <h3 id="myModalLabel">Main window's screenshot</h3>
-    </div>
-    <div class="modal-body">
-      <img src="http://i.imgur.com/m2MS8py.png"/>
-    </div>
-    <div class="modal-footer">
-      <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="ssModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Main Window Screenshot</h4>
+      </div>
+      <div class="modal-body">
+        <img src="http://i.imgur.com/m2MS8py.png" class="img-responsive">
+      </div>
     </div>
   </div>
 </div>
