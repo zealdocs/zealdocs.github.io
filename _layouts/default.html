@@ -32,12 +32,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li
-        {% if page.url == '/index.html' %} class="active"{% endif %}><a href="/">Home</a></li>
-        <li
-        {% if page.url == '/download.html' %} class="active"{% endif %}><a href="download.html">Download</a></li>
-        <li
-        {% if page.url == '/usage.html' %} class="active"{% endif %}><a href="usage.html">Usage</a></li>
+        <li{% if page.url == '/index.html' %} class="active"{% endif %}><a href="/">Home</a></li>
+        <li{% if page.url == '/download.html' %} class="active"{% endif %}><a href="download.html">Download</a></li>
+        <li{% if page.url == '/usage.html' %} class="active"{% endif %}><a href="usage.html">Usage</a></li>
         <li><a href="mailto:zeal@zealdocs.org">Contact</a></li>
         <li><a href="irc://irc.freenode.net/zealdocs">IRC (#zealdocs on freenode)</a></li>
       </ul>
