@@ -2,159 +2,80 @@
 layout: default
 ---
 <div class="row">
-  <h1 class="page-header">Download Zeal</h1>
+  <h1 class="page-header">Download</h1>
 
-  <p>
+  <p class="lead">
     There are various ways to download Zeal, depending on which operating
-    system you use, and whether you want to use precompiled binary, or build
+    system you use, and whether you want to use pre-compiled binary, or build
     it yourself from source code.
   </p>
 </div>
+
 <div class="row">
-  <div class="col-md-4">
-    <h2>
-      Windows binary
-    </h2>
+  <h2 id="windows">Windows</h2>
 
-    <div>
-      <p>
-        A 32-bit zipped Windows binary with all dependencies included is available
-        to download from GitHub.
-        <br>
-        Simply decompress the .zip file and run zeal.exe from any place.
-      </p>
-    </div>
-    <a class="btn btn-default btn-sm pull-right" role="button"
-       href="https://github.com/zealdocs/zeal/releases/download/20141123/zeal-20141123.zip">
-      Download zeal-20141123.zip (35MB) »
-    </a>
+  <h3>Stable release</h3>
 
-    <div class="clearfix"></div>
-    <h3>
-      Previous Windows binary
-    </h3>
+  <p>A 32-bit version for Windows is available in form of installable package (MSI) or as a portable edition.</p>
+  <p>
+    <a href="https://bintray.com/artifact/download/zealdocs/releases/zeal-0.1.0-windows-x86.msi"
+        class="btn btn-default" role="button">Download installer (36.8 MB)</a>
+    <a href="#" class="btn btn-default disabled" role="button">Download portable archive (Coming soon)</a>
+  </p>
 
-    <div>
-      <p>
-        The latest version has been reported to have various issues.
-        <br>
-        In case you experience freezes when selecting articles, or issues with fonts, please
-        try downloading the previous version:
-      </p>
-    </div>
-    <a class="btn btn-default btn-sm pull-right"
-       href="https://bitbucket.org/zealdocs/zeal-win32-binary-downloads/downloads/zeal-20140620.zip" role="button">
-      Download zeal-20140620.zip (35MB) »
-    </a>
+  <h3>CI builds</h3>
+  <p>
+    For a real cutting edge experience you can try our continuous integration builds,
+    which are automatically created on every change in our Git repository.
+    Keep in mind that CI builds are not intended for every day use and they will crash even more than stable releases.
+    <strong>You have been warned!</strong>
+  </p>
+  <p>
+    <a href="https://bitbucket.org/zealdocs/zeal-win32-binary-downloads/downloads"
+       class="btn btn-default" role="button">View CI builds</a>
+  </p>
+
+</div>
+
+<div class="row">
+  <h2 id="linux">Linux</h2>
+
+  <p>
+    Prebuilt packages are provided for variety of Linux distributions.
+    Some of the packages are maintained by Zeal developers, while others are courtesy of independent contributors.
+  </p>
+
+  <h3 id="linux-arch">Arch Linux</h3>
+  <p>
+    Arch Linux users can easily obtain Zeal from AUR. There are two packages available:
+    <code>zeal</code>* provides the latest stable release,
+    while <code>zeal-git</code> builds unstable source code from our Git repository.
+  </p>
+  <p>
+    <a href="https://aur.archlinux.org/packages/zeal/" class="btn btn-default" role="button">View zeal in AUR</a>
+    <a href="https://aur.archlinux.org/packages/zeal-git/" class="btn btn-default" role="button">View zeal-git in AUR</a>
+  </p>
+
+  <h3 id="linux-opensuse">openSUSE</h3>
+  <p>Zeal is part of the official openSUSE software repositories.</p>
+  <a href="http://software.opensuse.org/download.html?project=devel%3Atools&package=zeal"
+     class="btn btn-default" role="button">View openSUSE package</a>
+
+  <h3 id="linux-ubuntu">Ubuntu</h3>
+  <p>Ubuntu users can enjoy our own PPA repository. Run the following commands to add the PPA to your system:</p>
+  <pre>$ sudo add-apt-repository ppa:zeal-developers/ppa<br>$ sudo apt-get update<br>$ sudo apt-get install zeal</pre>
+  <div class="alert alert-warning" role="alert">
+    <strong>Attention non-Unity users!</strong>
+    Due to a <a href="https://bugs.launchpad.net/ubuntu/+source/appmenu-qt5/+bug/1307619">bug</a> in
+    <code>appmenu-qt5</code> package Zeal main menu might be missing on desktop environments other than Unity.
+    A simple solution is to remove <code>appmenu-qt5</code> package from your system.
   </div>
-  <div class="col-md-4">
-    <h2>
-      Ubuntu Linux PPA
-    </h2>
+  <p><a href="https://launchpad.net/~zeal-developers/+archive/ubuntu/ppa" class="btn btn-default" role="button">View PPA page</a></p>
 
-    <div>
-      <p>
-        If you use Ubuntu Linux Trusty (14.04) or Utopic (14.10), you can easily install Zeal from its PPA.
-        <br>
-        <br>
-        To install it:
-      </p>
-      <ol>
-        <li>
-          Run <code>add-apt-repository ppa:jerzy-kozera/zeal-ppa</code>
-        </li>
-        <li>
-          then do <code>apt-get update</code>,
-        </li>
-        <li>
-          and <code>apt-get install zeal</code>
-        </li>
-      </ol>
-      After installing Zeal can be started from command line by running
-      <code>zeal</code>.
-      <p>For Precise (12.04), Quantal (12.10), Raring (13.04), and Saucy (13.10) there are older versions of Zeal
-        available, but they are no longer supported.</p>
-    </div>
-    <a class="btn btn-default btn-sm pull-right" role="button"
-       href="https://launchpad.net/~jerzy-kozera/+archive/zeal-ppa">
-      Go to Ubuntu PPA&nbsp;»
-    </a>
+</div>
 
-    <div class="clearfix"></div>
-    <h2>
-      openSUSE package
-    </h2>
-
-    <div>
-      <p>
-        A package for openSUSE is also available.
-      </p>
-    </div>
-    <a class="btn btn-default btn-sm pull-right" role="button"
-       href="http://software.opensuse.org/download.html?project=devel%3Atools&package=zeal">
-      Go to openSUSE package page&nbsp;»
-    </a>
-  </div>
-  <div class="col-md-4">
-    <h2>
-      Arch Linux
-    </h2>
-
-    <div>
-      <p>
-        Zeal is available in AUR <code>(zeal-git)</code> for Arch Linux users.
-      </p>
-    </div>
-
-    <a class="btn btn-default btn-sm pull-right" role="button" href="https://aur.archlinux.org/packages/zeal-git/">
-      See zeal-git in AUR&nbsp;»
-    </a>
-
-    <div class="clearfix"></div>
-    <h2>
-      Fedora 19
-    </h2>
-
-    <div>
-      <p>
-        There is no rpm package yet, but Zeal can be easily built from scratch. All you have to
-        do prior the build is to install <code>qt5-qtwebkit-devel</code> and <code>libarchive-devel</code> packages from
-        the default Fedora repository.
-        <!--<br/><code>sudo yum install qt5-qtwebkit-devel qt5-qtbase-devel xcb-util-keysyms-devel</code>-->
-      </p>
-    </div>
-
-    <div class="clearfix"></div>
-    <h2>
-      Gentoo
-    </h2>
-
-    <div>
-      <p>
-        Instructions for getting Zeal to run under Gentoo are available at <a
-          href="http://henrikp.github.io/gentoo-overlay/">http://henrikp.github.io/gentoo-overlay/</a>.
-      </p>
-    </div>
-
-    <div class="clearfix"></div>
-    <h2>
-      Source code
-    </h2>
-
-    <div>
-      <p>
-        You can also&nbsp;compile Zeal from source code, assuming you have
-        <a href="https://www.qt.io/download/">
-          Qt &gt;= 5.2.0 development tools
-        </a>
-        installed. Clone the GitHub repository linked below, and run
-        <code>qmake</code>
-        (or <code>qmake-qt5</code> if <code>qmake</code> doesn't work)
-        and <code>make</code>.
-      </p>
-    </div>
-    <a class="btn btn-default btn-sm pull-right" role="button" href="https://github.com/zealdocs/zeal">
-      See GitHub project page »
-    </a>
-  </div>
+<div class="row">
+  <h2 id="source">Source code</h2>
+  <p>Complete source code is available on GitHub. To build Zeal follow instruction in the <code>README.md</code> file.</p>
+  <p><a href="https://github.com/zealdocs/zeal" class="btn btn-default" role="button">Go to GitHub</a></p>
 </div>
