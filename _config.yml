@@ -1,0 +1,8 @@
+name: "Zeal"
+description: "Offline documentation browser"
+
+url: "http://zealdocs.org"
+
+# Analytics
+analytics:
+  google: "UA-436420-7"
