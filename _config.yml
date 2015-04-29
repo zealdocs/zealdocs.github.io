@@ -3,6 +3,17 @@ description: "Offline documentation browser"
 
 url: "http://zealdocs.org"
 
+permalink: "/blog/:year/:month/:day/:title.html"
+
+# Blog authods
+authors:
+  trollixx:
+    name: "Oleg Shparber"
+    github: "trollixx"
+  jkozera:
+    name: "Jerzy Kozera"
+    github: "jkozera"
+
 # Analytics
 analytics:
   google: "UA-436420-7"

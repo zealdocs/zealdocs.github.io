@@ -19,6 +19,9 @@
         <li{% if page.url == '/usage.html' %} class="active"{% endif %}><a href="{{ site.baseurl }}/usage.html">Usage</a></li>
         <li{% if page.url == '/contact.html' %} class="active"{% endif %}><a href="{{ site.baseurl }}/contact.html">Contact</a></li>
       </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li{% if page.url contains '/blog/' %} class="active"{% endif %}><a href="{{ site.baseurl }}/blog/">Blog</a></li>
+      </ul>
     </div>
   </div>
 </nav>

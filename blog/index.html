@@ -1,0 +1,22 @@
+---
+layout: default
+title: Blog
+---
+<div class="row">
+  <h1 class="page-header">{{ page.title }}</h1>
+
+  {% for post in site.posts %}
+  <article class="post">
+    <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <small>{{ post.date | date: '%B %d, %Y' }} · by <a href="https://github.com/{{ site.authors[post.author].github }}">{{ site.authors[post.author].name }}</a></small>
+    <p>
+      {{ post.excerpt }}
+    </p>
+    <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+  </article>
+  {% endfor %}
+
+  {% if site.posts | size == 0 %}
+    <h2 class="text-center">No posts yet. Come back later!</h2>
+  {% endif %}
+</div>
