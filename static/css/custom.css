@@ -1,8 +1,10 @@
 /* Open Sans */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:200,300,600");
 
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.6em;
+  font-weight: 200;
 }
 
 h1, h2, h3, h4, h5, h6 {
