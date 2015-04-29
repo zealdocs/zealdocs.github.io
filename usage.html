@@ -1,69 +1,75 @@
 ---
 layout: default
 ---
-<div>
+<div class="row">
   <h1 class="page-header">Usage</h1>
-
-  <p>
-    After installing/compiling, to quickly download documentation sets, click 'Edit',&nbsp;'Options',&nbsp;'Docsets',&nbsp;'Download...'.
-  </p>
 </div>
 <div class="row">
-  <div class="col-md-12">
-    <img class="pull-right" src="http://i.imgur.com/1gT8891.png" class="img-responsive">
+  <img class="pull-right" src="http://i.imgur.com/1gT8891.png" class="img-responsive">
 
-    <h2>Docset filter</h2>
+  <h2>Download Docsets</h2>
 
-    <p>You can filter the search results to a specific (or a set of specific) docsets.</p>
+  <p>
+    After installing Zeal go to <kbd>File</kbd> ⟶ <kbd>Options</kbd> ⟶ <kbd>Docsets</kbd> to browse and download
+    docsets.
+  </p>
 
-    <p>The docset filter and the search query are delimited by a colon character (:).</p>
+  <h2>Search Filters</h2>
 
-    <p>Examples:</p>
-    <ul>
-      <li>ruby:set_x will search all docsets containing ruby (e.g. ironruby, ruby and ruby2) for set_x</li>
-      <li>set_x will search all docsets for set_x</li>
-    </ul>
-    <img src="/static/img/search_filter.png" class="img-responsive">
+  <p>You can limit search results to a specific (or a set of specific) docsets.</p>
 
-    <h2 id="plugins">Editor plugins</h2>
+  <p>The docset filter and the search query are delimited by a colon character (<code>:</code>).</p>
 
-    <h3>Emacs package</h3>
+  <p>Examples:</p>
+  <ul>
+    <li><code>ruby:set_x</code> will search all docsets containing ruby (e.g. ironruby, ruby and ruby2) for <code>set_x</code></li>
+    <li><code>set_x</code> will search all docsets for <code>set_x</code></li>
+  </ul>
+  <img src="/static/img/search_filter.png" class="img-responsive">
 
-    <p>There is an Emacs package available at <a href="https://github.com/jinzhu/zeal-at-point">https://github.com/jinzhu/zeal-at-point</a>.
-    </p>
+  <h2 id="plugins">IDE Plugins</h2>
 
-    <h3>Sublime Text package</h3>
+  <h3>Brackets</h3>
 
-    <p>There is a Sublime Text 2/3 package available at <a href="https://github.com/vaanwd/Zeal">https://github.com/vaanwd/Zeal</a>.
-    </p>
+  <p>
+    There is a Brackets integration available at <a href="https://github.com/anephew/brackets-zeal">https://github.com/anephew/brackets-zeal</a>.
+  </p>
 
-    <h3>Vim integration</h3>
+  <h3>Emacs</h3>
 
-    <p>There is a Vim plugin available at <a href="https://github.com/KabbAmine/zeavim.vim">https://github.com/KabbAmine/zeavim.vim</a>.
-    </p>
+  <p>There is an Emacs package available at <a href="https://github.com/jinzhu/zeal-at-point">https://github.com/jinzhu/zeal-at-point</a>.
+  </p>
 
-    <p>Or you can use <a href="https://github.com/Keithbsmiley/investigate.vim">https://github.com/Keithbsmiley/investigate.vim</a>
-      with something like this in .vimrc:</p>
-    <code>let g:investigate_command_for_python = '/usr/bin/zeal --query ^s'</code>
+  <h3>IntelliJ IDEA</h3>
 
-    <p>A simpler way to integrate with Vim is a simple mapping, like</p>
-    <code>:nnoremap gz :!zeal --query "&lt;cword&gt;"&amp;&lt;CR&gt;&lt;CR&gt;</code>
+  <p>
+    There is an IDEA plugin available at <a href="https://plugins.jetbrains.com/plugin/7351?pr=idea">https://plugins.jetbrains.com/plugin/7351?pr=idea</a>.
+  </p>
 
-    <h3>Brackets integration</h3>
+  <h3>KTextEditor (Kate, KWrite, KDevelop, Kile, etc)</h3>
 
-    <p>There is a Brackets integration available at <a href="https://github.com/anephew/brackets-zeal">https://github.com/anephew/brackets-zeal</a>.
-    </p>
+  <p>
+    A plugin for KTextEditor-based editors is available at <a href="https://github.com/g3ar/ZealSearch">https://github.com/g3ar/ZealSearch</a>.
+  </p>
 
-    <h3>IntelliJ IDEA integration</h3>
+  <h3>Sublime Text</h3>
 
-    <p>
-      There is an IDEA plugin available at <a href="https://plugins.jetbrains.com/plugin/7351?pr=idea">https://plugins.jetbrains.com/plugin/7351?pr=idea</a>.
-    </p>
+  <p>
+    There is a Sublime Text 2/3 package available at <a href="https://github.com/vaanwd/Zeal">https://github.com/vaanwd/Zeal</a>.
+  </p>
 
-    <h3>KTextEditor-based editors (Kate, KWrite, KDevelop, Kile and others)</h3>
+  <h3>VIM</h3>
 
-    <p>
-      A plugin for KTextEditor-based editors is available at <a href="https://github.com/g3ar/ZealSearch">https://github.com/g3ar/ZealSearch</a>.
-    </p>
-  </div>
+  <p>
+    There is a Vim plugin available at <a href="https://github.com/KabbAmine/zeavim.vim">https://github.com/KabbAmine/zeavim.vim</a>.
+  </p>
+
+  <p>
+    Or you can use <a href="https://github.com/Keithbsmiley/investigate.vim">https://github.com/Keithbsmiley/investigate.vim</a>
+    with something like this in .vimrc:
+  </p>
+  <pre><code>let g:investigate_command_for_python = '/usr/bin/zeal --query ^s'</code></pre>
+
+  <p>A simpler way to integrate with Vim is a simple mapping, like</p>
+  <pre><code>:nnoremap gz :!zeal --query "&lt;cword&gt;"&amp;&lt;CR&gt;&lt;CR&gt;</code></pre>
 </div>
