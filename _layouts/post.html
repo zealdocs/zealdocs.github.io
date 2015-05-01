@@ -14,3 +14,8 @@ layout: default
   <br>
   <a href="{{ site.baseurl }}/blog/">View all posts</a>
 </div>
+<div class="row">
+  {% if site.comments.disqus %}
+  {% include comments/disqus.html %}
+  {% endif %}
+</div>

@@ -14,6 +14,10 @@ authors:
     name: "Jerzy Kozera"
     github: "jkozera"
 
+# Comments
+comments:
+  disqus: "zealdocs"
+
 # Analytics
 analytics:
   google: "UA-436420-7"
