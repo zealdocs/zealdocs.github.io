@@ -21,3 +21,6 @@ comments:
 # Analytics
 analytics:
   google: "UA-436420-7"
+
+gems:
+  - jekyll-sitemap
