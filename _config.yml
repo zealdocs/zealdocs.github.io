@@ -1,7 +1,7 @@
 name: "Zeal"
 description: "Offline Documentation Browser"
 
-url: "http://zealdocs.org"
+url: "https://zealdocs.org"
 
 permalink: "/blog/:year/:month/:day/:title.html"
 
