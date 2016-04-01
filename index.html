@@ -3,51 +3,38 @@ layout: default
 ---
 <div class="jumbotron">
   <h1>Zeal</h1>
-  <p>
-    An offline documentation browser inspired by <a href="https://kapeli.com/dash/">Dash</a>. Available for Linux and Windows.
-  </p>
-  <ul>
-    <li>
-      Save yourself from distractions, and keep all documentation you need instantly available.
-    </li>
-    <li>
-      Do not depend on your Internet connection or public Wi-Fi.
-    </li>
-    <li>
-      Keep your documentation fresh with the built-in docset update system.
-    </li>
-    <li>
-      Integrate Zeal with IDEA, Sublime Text, ViM, or your favourite IDE via variety of <a href="{{ site.baseurl }}/usage.html#plugins">plugins</a>.
-    </li>
-    <li>
-      Enjoy open source and free software! Zeal is available under the GPLv3. Don't forget to contribute!
-    </li>
-  </ul>
-  <p><a class="btn btn-primary btn-lg" href="{{ site.baseurl }}/download.html" role="button">Download</a></p>
+  <div class="row">
+    <div class="col-md-8">
+      <p>
+        An offline documentation browser inspired by <a href="https://kapeli.com/dash/">Dash</a>. Available for Linux and Windows.
+      </p>
+      <ul>
+        <li>
+          Save yourself from distractions, and keep all documentation you need instantly available.
+        </li>
+        <li>
+          Do not depend on your Internet connection or public Wi-Fi.
+        </li>
+        <li>
+          Keep your documentation fresh with the built-in docset update system.
+        </li>
+        <li>
+          Integrate Zeal with IDEA, Sublime Text, ViM, or your favourite IDE via variety of <a href="{{ site.baseurl }}/usage.html#plugins">plugins</a>.
+        </li>
+        <li>
+          Enjoy open source and free software! Zeal is available under the GPLv3. Don't forget to contribute!
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <a href="#ssModal" class="thumbnail" data-toggle="modal" data-target="#ssModal">
+        <img src="https://i.imgur.com/v63u1ZJ.png" class="img-responsive">
+      </a>
+    </div>
+  </div>
+  <p class="text-center"><a class="btn btn-primary btn-lg" href="{{ site.baseurl }}/download.html" role="button">Download Zeal</a></p>
 </div>
 
-<div class="row">
-  <div class="col-md-6">
-    <div class="clearfix"></div>
-    <br>
-
-    <a href="#ssModal" class="thumbnail" data-toggle="modal" data-target="#ssModal">
-      <img src="https://i.imgur.com/v63u1ZJ.png" class="img-responsive">
-    </a>
-    <a class="btn btn-default pull-right" href="https://imgur.com/a/HX2yU" role="button">More screenshots »</a>
-  </div>
-
-  <div class="col-md-6">
-    <h2>Documentation included</h2>
-
-    <p>
-      All documentation available for <a href="https://kapeli.com/dash">Dash</a> is also available for Zeal.
-      <br/>See <a href="#all_docsets">the list below</a>.
-    </p>
-
-    <img src="/static/img/docsets.png" class="img-responsive">
-  </div>
-</div>
 <div class="row text-center">
   <h2>Zeal comes with <strong>{{ site.data.docsets | size }}</strong> awesome docsets!</h2>
   <ul id="docset-list" class="list-inline">
