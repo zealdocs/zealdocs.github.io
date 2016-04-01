@@ -1,6 +1,6 @@
 ---
 ---
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
     var docs = {
     {% for doc in site.data.docsets %}
         '{{ doc.title }}': '{{ doc.icon }}'{% unless forloop.last %},{% endunless %}
@@ -10,4 +10,4 @@ $(function() {
         var title = el.querySelector('span').textContent;
         el.querySelector('img').setAttribute('src', 'data:;base64,' + docs[title]);
     });
-})
+});
