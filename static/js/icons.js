@@ -8,6 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 
     [].forEach.call(document.getElementById('docset-list').querySelectorAll('li'), function(el) {
-        el.setAttribute('style', 'background-image: url(data:image/png;base64,' + docs[el.textContent]) + ')';
+        el.setAttribute('style', 'background-image: url(data:image/png;base64,' + docs[el.textContent] + ')');
     });
 });
