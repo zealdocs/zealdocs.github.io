@@ -5,7 +5,7 @@ url: "https://zealdocs.org"
 
 permalink: "/blog/:year/:month/:day/:title.html"
 
-# Blog authods
+# Blog authors
 authors:
   trollixx:
     name: "Oleg Shparber"
