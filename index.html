@@ -55,7 +55,7 @@ layout: default
 
     <p>
       All documentation available for <a href="https://kapeli.com/dash">Dash</a> is also available for Zeal.
-      See <a href="https://kapeli.com/dash#docsets">list on Dash website</a>.
+      <br/>See <a href="#all_docsets">the list below</a>.
     </p>
 
     <img src="/static/img/docsets.png" class="img-responsive">
@@ -65,6 +65,16 @@ layout: default
     </p>
   </div>
 </div>
+    <h1>Full list of available documentation</h1>
+    <a id="all_docsets"></a>
+    <h2>{{ site.data.docsets | size }} docsets:</h2>
+    <div class="row">
+      {% for doc in site.data.docsets %}
+      <div class="docset-wrapper">
+        <div class="docset"><img/><span>{{ doc.title }}</span></div>
+      </div>
+      {% endfor %}
+    </div>
 
 <!-- Modal -->
 <div class="modal fade" id="ssModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
