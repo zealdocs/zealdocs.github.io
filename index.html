@@ -60,16 +60,14 @@ layout: default
     </p>
   </div>
 </div>
-    <h1>Full list of available documentation</h1>
-    <a id="all_docsets"></a>
-    <h2>{{ site.data.docsets | size }} docsets:</h2>
-    <div class="row">
-      {% for doc in site.data.docsets %}
-      <div class="docset-wrapper">
-        <div class="docset"><img/><span>{{ doc.title }}</span></div>
-      </div>
-      {% endfor %}
-    </div>
+<div class="row text-center">
+  <h2>Zeal comes with <strong>{{ site.data.docsets | size }}</strong> awesome docsets!</h2>
+  <ul id="docset-list" class="list-inline">
+  {% for docset in site.data.docsets %}
+    <li><img>{{ docset.title }}</li>
+  {% endfor %}
+  </ul>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="ssModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

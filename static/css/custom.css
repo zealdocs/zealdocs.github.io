@@ -27,21 +27,9 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 15px;
 }
 
-.docset-wrapper {
-  float: left;
-  margin-bottom: 10px;
-}
-
-.docset {
-  display: table-row;
-}
-
-.docset img {
-  margin-left: 20px;
-  margin-right: 5px;
-  display: table-cell;
-}
-
-.docset span {
-  display: table-cell;
+#docset-list li {
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 20px;
+  margin: 2px;
 }
