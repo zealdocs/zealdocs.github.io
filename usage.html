@@ -75,8 +75,8 @@ title: Usage
     Or you can use <a href="https://github.com/keith/investigate.vim">https://github.com/keith/investigate.vim</a>
     with something like this in .vimrc:
   </p>
-  <pre><code>let g:investigate_command_for_python = '/usr/bin/zeal dash://^s'</code></pre>
+  <pre><code>let g:investigate_command_for_python = '/usr/bin/zeal ^s'</code></pre>
 
   <p>A simpler way to integrate with Vim is a simple mapping, like</p>
-  <pre><code>:nnoremap gz :!zeal dash://"&lt;cword&gt;"&amp;&lt;CR&gt;&lt;CR&gt;</code></pre>
+  <pre><code>:nnoremap gz :!zeal "&lt;cword&gt;"&amp;&lt;CR&gt;&lt;CR&gt;</code></pre>
 </div>
