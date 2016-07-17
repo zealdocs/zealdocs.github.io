@@ -22,5 +22,9 @@ comments:
 analytics:
   google: "UA-436420-7"
 
+# Jekyll Settings
 gems:
   - jekyll-sitemap
+
+sass:
+  style: compressed
