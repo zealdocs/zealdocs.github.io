@@ -1,5 +1,6 @@
 # Jekyll generated site
 _site/
+.sass-cache/
 
 # WebStorm files
 .idea/
