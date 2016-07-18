@@ -1,0 +1,44 @@
+/*
+ * Page headers
+ *
+ * Jumbotron-esque headers at the top of every page that's not the homepage.
+ */
+
+.zd-header {
+   position: relative;
+   padding: 30px 0;
+   text-align: center;
+   background-color: #eee;
+ }
+.zd-header {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.zd-header h1 {
+  margin-top: 0;
+}
+.zd-header p {
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 1.4;
+}
+.zd-header .container {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .zd-header {
+    padding: 20px 0;
+    text-align: left;
+  }
+  .zd-header h1 {
+    line-height: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .zd-header h1,
+  .zd-header p {
+    margin-right: 380px;
+  }
+}
