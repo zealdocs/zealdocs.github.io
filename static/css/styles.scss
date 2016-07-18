@@ -4,4 +4,26 @@
 /*!
  * zealdocs.org Style
  */
-@import "custom";
+@import "zd";
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:200,300,600");
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.6em;
+}
+
+.post h1 {
+  margin-bottom: 0;
+}
+
+.post div.entry {
+  padding-top: 15px;
+}
+
+#docset-list li {
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 20px;
+  margin: 2px;
+}
