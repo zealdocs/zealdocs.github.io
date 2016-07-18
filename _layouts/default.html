@@ -5,8 +5,30 @@
 </head>
 <body>
 {% include nav.html %}
+<div class="zd-header" id="content" tabindex="-1">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.lead }}</p>
+  </div>
+</div>
 <div class="container">
-  {{ content }}
+  <div class="row">
+    <div class="col-md-{% if page.sidebar %}9{% else %}12{% endif %}" role="main">
+      {{ content }}
+    </div>
+    {% if page.sidebar == true %}
+    <div class="col-md-3" role="complementary">
+      <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+        <ul class="nav bs-docs-sidenav">
+          {% include nav/{{page.slug}}.html %}
+        </ul>
+        <a class="back-to-top" href="#top">
+          Back to top
+        </a>
+      </nav>
+    </div>
+    {% endif %}
+  </div>
 </div>
 {% include footer.html %}
 {% include js.html %}
