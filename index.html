@@ -1,41 +1,43 @@
 ---
-layout: default
+layout: index
 ---
-<div class="jumbotron">
-  <h1>Zeal</h1>
-  <div class="row">
-    <div class="col-md-8">
-      <p>
-        An offline documentation browser inspired by <a href="https://kapeli.com/dash/">Dash</a>.<br><small>Available for Linux and Windows.</small>
-      </p>
-      <ul>
-        <li>
-          Save yourself from distractions, and keep all documentation you need instantly available.
-        </li>
-        <li>
-          Do not depend on your Internet connection or public Wi-Fi.
-        </li>
-        <li>
-          Keep your documentation fresh with the built-in docset update system.
-        </li>
-        <li>
-          Integrate Zeal with IDEA, Sublime Text, ViM, or your favourite IDE via variety of <a href="{{ site.baseurl }}/usage.html#plugins">plugins</a>.
-        </li>
-        <li>
-          Enjoy open source and free software! Zeal is available under the GPLv3. Don't forget to contribute!
-        </li>
-      </ul>
+<div class="container">
+  <div class="jumbotron">
+    <h1>Zeal</h1>
+    <div class="row">
+      <div class="col-md-8">
+        <p>
+          An offline documentation browser inspired by <a href="https://kapeli.com/dash/">Dash</a>.<br><small>Available for Linux and Windows.</small>
+        </p>
+        <ul>
+          <li>
+            Save yourself from distractions, and keep all documentation you need instantly available.
+          </li>
+          <li>
+            Do not depend on your Internet connection or public Wi-Fi.
+          </li>
+          <li>
+            Keep your documentation fresh with the built-in docset update system.
+          </li>
+          <li>
+            Integrate Zeal with IDEA, Sublime Text, ViM, or your favourite IDE via variety of <a href="{{ site.baseurl }}/usage.html#plugins">plugins</a>.
+          </li>
+          <li>
+            Enjoy open source and free software! Zeal is available under the GPLv3. Don't forget to contribute!
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <a href="#ssModal" class="thumbnail" data-toggle="modal" data-target="#ssModal">
+          <img src="https://i.imgur.com/v63u1ZJ.png" class="img-responsive">
+        </a>
+      </div>
     </div>
-    <div class="col-md-4">
-      <a href="#ssModal" class="thumbnail" data-toggle="modal" data-target="#ssModal">
-        <img src="https://i.imgur.com/v63u1ZJ.png" class="img-responsive">
-      </a>
-    </div>
+    <p class="text-center"><a class="btn btn-primary btn-lg" href="{{ site.baseurl }}/download.html" role="button">Download Zeal</a></p>
   </div>
-  <p class="text-center"><a class="btn btn-primary btn-lg" href="{{ site.baseurl }}/download.html" role="button">Download Zeal</a></p>
 </div>
 
-<div class="row text-center">
+<div class="container text-center">
   <h2>Zeal comes with <strong>{{ site.data.docsets | size }}</strong> awesome docsets!</h2>
   <ul id="docset-list" class="list-inline">
   {% for docset in site.data.docsets %}
