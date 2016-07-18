@@ -1,0 +1,35 @@
+/*
+ * Footer
+ *
+ * Separated section of content at the bottom of all pages.
+ */
+
+.zd-footer {
+  padding: 20px 0;
+  margin-top: 40px;
+  color: #9d9d9d;
+  text-align: center;
+  background-color: #222;
+}
+.zd-footer a {
+  color: #fff;
+}
+.zd-footer-links {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+.zd-footer-links li {
+  display: inline-block;
+}
+.zd-footer-links li + li {
+  margin-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .zd-footer {
+    text-align: left;
+  }
+  .zd-footer p {
+    margin-bottom: 0;
+  }
+}

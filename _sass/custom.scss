@@ -1,16 +1,10 @@
+@import "zd/footer";
+
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:200,300,600");
 
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.6em;
-}
-
-.page-footer {
-  border-top: 1px solid #e5e5e5;
-  margin-top: 50px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  text-align: center;
 }
 
 .post h1 {
