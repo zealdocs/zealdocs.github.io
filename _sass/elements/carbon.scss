@@ -1,0 +1,30 @@
+#carbonads {
+  display: block;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 15px;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 15px;
+}
+#carbonads span {
+  display: block;
+  overflow: hidden;
+}
+.carbon-text {
+  display: block;
+  float: left;
+  max-width: 230px;
+  text-align: left;
+}
+.carbon-img {
+  float: left;
+  margin-right: 10px;
+}
+.carbon-poweredby {
+  display: block;
+  float: right;
+  font-size: 13px;
+  margin-top: -18px;
+}
