@@ -1,0 +1,50 @@
+/*
+ * Homepage
+ *
+ * Tweaks to the custom homepage and the header-homepage (main jumbotron).
+ */
+
+/* Share header-homepage with page headers */
+.zd-hp-header {
+  @extend .zd-header;
+  text-align: center;
+}
+.zd-hp-header h1 {
+  font-weight: 300;
+  line-height: 1;
+}
+.zd-hp-header .lead {
+  margin: 30px auto;
+  font-size: 20px;
+}
+.zd-hp-header .version {
+  margin: -15px auto 30px;
+  font-size: 14px;
+}
+.zd-hp-header .btn {
+  width: 100%;
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+@media (min-width: 480px) {
+  .zd-hp-header .btn {
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .zd-hp-header h1 {
+    font-size: 60px;
+  }
+  .zd-hp-header .lead {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .zd-hp-header .lead {
+    width: 80%;
+    font-size: 30px;
+  }
+}

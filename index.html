@@ -1,41 +1,14 @@
 ---
 layout: index
 ---
-<div class="container">
-  <div class="jumbotron">
-    <h1>Zeal</h1>
-    <div class="row">
-      <div class="col-md-8">
-        <p>
-          An offline documentation browser inspired by <a href="https://kapeli.com/dash/">Dash</a>.<br><small>Available for Linux and Windows.</small>
-        </p>
-        <ul>
-          <li>
-            Save yourself from distractions, and keep all documentation you need instantly available.
-          </li>
-          <li>
-            Do not depend on your Internet connection or public Wi-Fi.
-          </li>
-          <li>
-            Keep your documentation fresh with the built-in docset update system.
-          </li>
-          <li>
-            Integrate Zeal with IDEA, Sublime Text, ViM, or your favourite IDE via variety of <a href="{{ site.baseurl }}/usage.html#plugins">plugins</a>.
-          </li>
-          <li>
-            Enjoy open source and free software! Zeal is available under the GPLv3. Don't forget to contribute!
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-4">
-        <a href="#ssModal" class="thumbnail" data-toggle="modal" data-target="#ssModal">
-          <img src="https://i.imgur.com/v63u1ZJ.png" class="img-responsive">
-        </a>
-      </div>
-    </div>
-    <p class="text-center"><a class="btn btn-primary btn-lg" href="{{ site.baseurl }}/download.html" role="button">Download Zeal</a></p>
+<main class="zd-hp-header" id="content" tabindex="-1">
+  <div class="container">
+    <p class="lead">Zeal is an offline documentation browser for software developers.</p>
+    <img src="https://i.imgur.com/v63u1ZJ.png" class="img-responsive center-block">
+    <p class="lead"><a href="/download.html" class="btn btn-primary btn-lg">Download Zeal</a></p>
+    <p class="version">Version {{ site.data.zeal.current_version }}</p>
   </div>
-</div>
+</main>
 
 <div class="container text-center">
   <h2>Zeal comes with <strong>{{ site.data.docsets | size }}</strong> awesome docsets!</h2>
@@ -45,15 +18,4 @@ layout: index
   {% endfor %}
   </ul>
   <h4>These docsets are generously provided by Dash. And you can also <a href="https://kapeli.com/docsets">create</a> your own!</h4>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="ssModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-body">
-        <img src="https://i.imgur.com/v63u1ZJ.png" class="img-responsive">
-      </div>
-    </div>
-  </div>
 </div>
