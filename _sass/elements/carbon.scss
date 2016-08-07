@@ -4,7 +4,7 @@
   border-radius: 5px;
   font-size: 13px;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0 auto !important;
   max-width: 350px;
   padding: 10px;
 }
@@ -27,4 +27,16 @@
   float: right;
   font-size: 12px;
   margin-top: -18px;
+}
+
+@media (min-width: 992px) {
+  #carbonads {
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+  // Override for the home page
+  .zd-hp-header #carbonads {
+    position: static;
+  }
 }
