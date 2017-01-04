@@ -1,9 +1,7 @@
 ---
 layout: default
 ---
-<div class="row">
-  <h1 class="page-header">{{ page.title }}</h1>
-
+<div class="zd-section">
   <article class="post">
     <small>{{ page.date | date: '%B %d, %Y' }} · by <a href="https://github.com/{{ site.authors[page.author].github }}">{{ site.authors[page.author].name }}</a></small>
     <div class="entry">
@@ -14,7 +12,7 @@ layout: default
   <br>
   <a href="{{ site.baseurl }}/blog/">View all posts</a>
 </div>
-<div class="row">
+<div class="zd-section">
   {% if jekyll.environment == "production" and site.comments.disqus %}
   {% include comments/disqus.html %}
   {% endif %}
