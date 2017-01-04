@@ -49,6 +49,24 @@
   }
 }
 
+/* Dash download button */
+$dash-color: #78579e;
+$dash-border-color: darken($dash-color, 5%);
+$dash-active-background: darken($dash-color, 10%);
+$dash-active-border: darken($dash-border-color, 12%);
+
+.btn-dash {
+  background-color: $dash-color;
+  border-color: $dash-border-color;
+  color: #fff;
+}
+.btn-dash:hover,
+.btn-dash:active {
+  background-color: $dash-active-background;
+  border-color: $dash-active-border;
+  color: #fff;
+}
+
 /* Outline buttons */
 .btn-outline {
   background-color: transparent;
@@ -70,10 +88,14 @@
 .btn-danger.btn-outline {
   color: #d9534f;
 }
+.btn-dash.btn-outline {
+  color: $dash-color;
+}
 .btn-primary.btn-outline:hover,
 .btn-success.btn-outline:hover,
 .btn-info.btn-outline:hover,
 .btn-warning.btn-outline:hover,
-.btn-danger.btn-outline:hover {
+.btn-danger.btn-outline:hover,
+.btn-dash.btn-outline:hover {
   color: #fff;
 }
