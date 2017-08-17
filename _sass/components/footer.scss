@@ -24,6 +24,12 @@
 .zd-footer-links li + li {
   margin-left: 15px;
 }
+.zd-footer-sponsors {
+  text-align: center;
+}
+.zd-footer-sponsors img {
+  height: 30px;
+}
 
 @media (min-width: 768px) {
   .zd-footer {
@@ -31,5 +37,8 @@
   }
   .zd-footer p {
     margin-bottom: 0;
+  }
+  .zd-footer-sponsors {
+    text-align: right;
   }
 }
