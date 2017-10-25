@@ -23,7 +23,7 @@ analytics:
   google: "UA-436420-7"
 
 # Jekyll Settings
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
 
