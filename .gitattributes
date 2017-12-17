@@ -1,0 +1,16 @@
+# Autodetect text files
+* text=auto
+
+# Enforce text mode
+*.css  text
+*.html text
+*.js   text
+*.md   text
+*.scss text
+*.txt  text
+*.yml  text
+CNAME  text
+
+# Binary files
+*.ico binary
+*.png binary
