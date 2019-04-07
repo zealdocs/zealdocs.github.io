@@ -6,11 +6,18 @@
  */
 @import "zd";
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:200,300,600");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic");
+
+html {
+  font-size: 62.5%;
+}
 
 body {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.6em;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-size: 1.6em;
+	font-weight: 300;
+	letter-spacing: .01em;
+  line-height: 1.6;
 }
 
 .post h1 {
