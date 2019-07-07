@@ -20,6 +20,22 @@ body {
   line-height: 1.6;
 }
 
+table tr {
+  background-color: #fff
+}
+
+table tr td,
+table tr th {
+  border: 1px solid #ccc;
+  text-align: left;
+  padding: 6px 13px;
+  margin: 0
+}
+
+table tr th {
+  font-weight: 300
+}
+
 .post h1 {
   margin-bottom: 0;
 }
