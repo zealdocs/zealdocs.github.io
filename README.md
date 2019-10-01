@@ -1,16 +1,21 @@
-# zealdocs.github.io
-https://zealdocs.org/: web documentation for [Zeal, an offline documentation browser][zeal].
+# zealdocs.github.io / zealdocs.org
+
+This repository contains source code the [Zeal][zeal] homepage.
 
 ## Development
+
 To build this static site, you need the following dependencies:
+
 - `jekyll` (`v3.1.6` from Ubuntu 18.04 works correctly)
 
 To perform a one-off build, run:
+
 ```sh
 jekyll build
 ```
 
 To build any time a source code file changes and locally host the results at `http://127.0.0.1:4000/`, run:
+
 ```sh
 jekyll serve
 ```
