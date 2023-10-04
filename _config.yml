@@ -27,5 +27,8 @@ plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
 
+# Static files
+include: [".well-known"]
+
 sass:
   style: compressed
