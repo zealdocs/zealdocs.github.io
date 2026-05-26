@@ -34,3 +34,9 @@ body {
   padding-left: 20px;
   margin: 2px;
 }
+
+@media (max-width: 767px) {
+  .zd-section .btn {
+    margin-bottom: 10px;
+  }
+}
