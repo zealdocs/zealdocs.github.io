@@ -118,18 +118,15 @@ lead: There are various ways to download Zeal, depending on which operating
 
   <h3 id="linux-ubuntu">Ubuntu</h3>
   <p>Install Zeal from the official repositories:</p>
-  <pre>$ sudo apt-get install zeal</pre>
-  <p>When the official package becomes outdated, our own PPA repository provides an up-to-date version. Run the following commands to use the PPA:</p>
-  <pre>$ sudo add-apt-repository ppa:zeal-developers/ppa<br>$ sudo apt-get update<br>$ sudo apt-get install zeal</pre>
-  <div class="alert alert-warning" role="alert">
-    <strong>Attention non-Unity users!</strong>
-    Due to a <a href="https://bugs.launchpad.net/ubuntu/+source/appmenu-qt5/+bug/1307619">bug</a> in
-    <code>appmenu-qt5</code> package, Zeal main menu might be missing on desktop environments other than Unity.
-    A simple solution is to remove <code>appmenu-qt5</code> package from your system.
-  </div>
+  <pre>$ sudo apt install zeal</pre>
+  <p>When the official package is outdated, our PPA provides up-to-date stable releases:</p>
+  <pre>$ sudo add-apt-repository ppa:zealdocs/ppa<br>$ sudo apt update<br>$ sudo apt install zeal</pre>
+  <p>To try the latest features before they are released, use the nightly PPA instead:</p>
+  <pre>$ sudo add-apt-repository ppa:zealdocs/nightly<br>$ sudo apt update<br>$ sudo apt install zeal</pre>
   <p>
-    <a href="http://packages.ubuntu.com/search?keywords=zeal&searchon=names" class="btn btn-default" role="button">View Ubuntu packages</a>
-    <a href="https://launchpad.net/~zeal-developers/+archive/ubuntu/ppa" class="btn btn-default" role="button">View PPA</a>
+    <a href="https://packages.ubuntu.com/search?keywords=zeal&searchon=names" class="btn btn-default" role="button">View Ubuntu packages</a>
+    <a href="https://launchpad.net/~zealdocs/+archive/ubuntu/ppa" class="btn btn-default" role="button">View stable PPA</a>
+    <a href="https://launchpad.net/~zealdocs/+archive/ubuntu/nightly" class="btn btn-default" role="button">View nightly PPA</a>
   </p>
 </div>
 
