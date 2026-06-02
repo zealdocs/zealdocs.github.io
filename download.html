@@ -3,7 +3,7 @@ layout: default
 title: Download
 slug: download
 lead: There are various ways to download Zeal, depending on which operating
-      system you use, and whether you want to use pre-compiled binary, or build
+      system you use, and whether you want to use a pre-compiled binary, or build
       it yourself from the source code.
 ---
 <div class="zd-section">
@@ -14,7 +14,7 @@ lead: There are various ways to download Zeal, depending on which operating
   <h2 id="windows">Windows</h2>
 
   <h3>Installer (MSI)</h3>
-  <p>Use this installer to conveniently install Zeal as any other app.</p>
+  <p>Use this installer to conveniently install Zeal like any other app.</p>
   <p>
     <a href="https://github.com/zealdocs/zeal/releases/download/v{{ site.data.zeal.current_version }}/zeal-{{ site.data.zeal.current_version }}-windows-x64.msi"
         class="btn btn-default" role="button">64-bit MSI</a>
@@ -31,29 +31,29 @@ lead: There are various ways to download Zeal, depending on which operating
 
   <h3>Chocolatey</h3>
   <p><a href="https://chocolatey.org/">Chocolatey</a> is a package manager for Windows.</p>
-  <p>To install Zeal run:</p>
+  <p>To install Zeal, run:</p>
   <pre>choco install zeal</pre>
   <p>Alternatively you can install the portable version:</p>
   <pre>choco install zeal.portable</pre>
 
   <h3>Scoop</h3>
   <p><a href="http://scoop.sh/">Scoop</a> is a command-line installer for Windows.</p>
-  <p>First you need to enable <a href="https://github.com/ScoopInstaller/Extras">extras</a> bucket, if that was not done before:</p>
+  <p>First you need to enable the <a href="https://github.com/ScoopInstaller/Extras">extras</a> bucket, if you haven't already:</p>
   <pre>scoop bucket add extras</pre>
-  <p>To install Zeal run the following command:</p>
+  <p>To install Zeal, run the following command:</p>
   <pre>scoop install zeal</pre>
   <p>Scoop can also install Visual C++ 2015 Redistributable:</p>
   <pre>scoop install vcredist2015</pre>
 
   <h3>CI builds</h3>
   <p>
-    In addition to the stable builds continious integration system automatically publishes prebuilt artifacts on each push to the main repository.
+    In addition to the stable builds, a continuous integration system automatically publishes prebuilt artifacts on each push to the main repository.
   </p>
   <p>
     These builds can be useful for testing unreleased changes, but are <strong>not</strong> intended for daily use, and are likely to crash more often than stable releases.
   </p>
   <p>
-    To download a build artifact in the CI build history choose a change you want to test, then pick a build job corresponding the target platform, and finally download archive from the Artifacts tab.
+    To download a build artifact, open the workflow run for the change you want to test, then download the archive for your target platform from the Artifacts section at the bottom of the run summary.
   </p>
   <p>
     <a href="https://github.com/zealdocs/zeal/actions/workflows/build-check.yml" class="btn btn-default" role="button">View CI build history</a>
@@ -64,10 +64,8 @@ lead: There are various ways to download Zeal, depending on which operating
   <h2 id="linux">Linux</h2>
 
   <p>
-    Prebuilt packages are provided for variety of Linux distributions.
+    Prebuilt packages are provided for a variety of Linux distributions.
     Some of the packages are maintained by Zeal developers, while others are courtesy of independent contributors.
-    In case your favourite distribution is missing from the list, please, open an issue ticket in our
-    <a href="https://github.com/zealdocs/zeal-packaging/"><code>zeal-packaging</code></a> repository.
   </p>
 
   <h3 id="linux-flatpak">Distribution Independent</h3>
@@ -149,6 +147,6 @@ lead: There are various ways to download Zeal, depending on which operating
 
 <div class="zd-section">
   <h2 id="source">Source code</h2>
-  <p>Complete source code is available on GitHub. To build Zeal follow instruction in the <code>README.md</code> file.</p>
+  <p>Complete source code is available on GitHub. To build Zeal follow the instructions in the <code>README.md</code> file.</p>
   <p><a href="https://github.com/zealdocs/zeal" class="btn btn-default" role="button">Go to GitHub</a></p>
 </div>
