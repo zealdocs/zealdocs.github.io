@@ -90,6 +90,23 @@ lead: Get Zeal for your platform, or build it yourself from source.
   <a href="https://aur.archlinux.org/packages/zeal-git/"
      class="btn btn-default" role="button">View zeal-git in AUR</a>
 
+  <h3 id="linux-el">CentOS Stream, RHEL, and Derivatives</h3>
+  <p>
+    On Enterprise Linux 9 and 10 (CentOS Stream, RHEL, AlmaLinux, Rocky Linux, etc.) install Zeal from our COPR.
+    Enable the <a href="https://docs.fedoraproject.org/en-US/epel/">EPEL</a> repository first, since Zeal depends on packages from it:
+  </p>
+  <pre>sudo dnf install epel-release<br>sudo dnf copr enable @zealdocs/zeal<br>sudo dnf install zeal</pre>
+  <p>
+    Note for RHEL: the <code>epel-release</code> package is not available in the official repositories.
+    Follow the <a href="https://docs.fedoraproject.org/en-US/epel/getting-started/">EPEL Getting Started guide</a> to enable EPEL on RHEL.
+  </p>
+  <p>To try the latest features before they are released, use the nightly COPR instead:</p>
+  <pre>sudo dnf copr enable @zealdocs/zeal-nightly<br>sudo dnf install zeal</pre>
+  <p>
+    <a href="https://copr.fedorainfracloud.org/coprs/g/zealdocs/zeal/" class="btn btn-default" role="button">View stable COPR</a>
+    <a href="https://copr.fedorainfracloud.org/coprs/g/zealdocs/zeal-nightly/" class="btn btn-default" role="button">View nightly COPR</a>
+  </p>
+
   <h3 id="linux-debian">Debian</h3>
   <p>Install Zeal from the official repositories:</p>
   <pre>sudo apt install zeal</pre>
@@ -99,8 +116,15 @@ lead: Get Zeal for your platform, or build it yourself from source.
   <h3 id="linux-fedora">Fedora</h3>
   <p>Install Zeal from the official Fedora software repositories.</p>
   <pre>sudo dnf install zeal</pre>
-  <a href="https://packages.fedoraproject.org/pkgs/zeal/zeal/"
-     class="btn btn-default" role="button">View Fedora package</a>
+  <p>When the official package is outdated, our COPR provides up-to-date stable releases:</p>
+  <pre>sudo dnf copr enable @zealdocs/zeal<br>sudo dnf install zeal</pre>
+  <p>To try the latest features before they are released, use the nightly COPR instead:</p>
+  <pre>sudo dnf copr enable @zealdocs/zeal-nightly<br>sudo dnf install zeal</pre>
+  <p>
+    <a href="https://packages.fedoraproject.org/pkgs/zeal/zeal/" class="btn btn-default" role="button">View Fedora package</a>
+    <a href="https://copr.fedorainfracloud.org/coprs/g/zealdocs/zeal/" class="btn btn-default" role="button">View stable COPR</a>
+    <a href="https://copr.fedorainfracloud.org/coprs/g/zealdocs/zeal-nightly/" class="btn btn-default" role="button">View nightly COPR</a>
+  </p>
 
   <h3 id="linux-gentoo">Gentoo</h3>
   <p>Install the official Zeal package for Gentoo:</p>
